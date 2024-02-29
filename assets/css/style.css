@@ -1,0 +1,101 @@
+:root {
+  --Lightgreen: rgb(13 203 158);
+  --black: rgb(25, 27, 26);
+  --gray: rgb(195 216 216);
+  --blue: rgb(1 67 96);
+}
+* {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10rem;
+  background-color: var(--Lightgreen);
+}
+h1 {
+  align-self: flex-start;
+  width: 20rem;
+  height: 4.5rem;
+  text-align: center;
+  background-color: var(--blue);
+  font-size: 3rem;
+  text-align: center;
+  color: var(--gray);
+  text-wrap: wrap;
+  padding: 1.75rem 0.5rem 0.75rem 0.5rem;
+}
+.mypic {
+  height: 10rem;
+  border-radius: 48%;
+  padding-left: 1rem;
+}
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 60vw;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("./assets/jean-beller-wYGadR_bvKI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 500vh;
+  font-size: larger;
+}
+aside {
+  width: 25vw;
+  border-right: solid var(--black);
+  margin-bottom: 5vh;
+}
+section {
+  width: 74vw;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutme {
+  text-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pic {
+  height: 40vh;
+  width: 20vw;
+  margin-bottom: 0.5rem;
+}
+.picmain {
+  height: 50vh;
+  width: 30vw;
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: none;
+}
+.newproject {
+  flex-grow: 1;
+}
+.project {
+  flex-grow: 3;
+}

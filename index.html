@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
       rel="stylesheet"
     /> -->
   </head>
-  <body class="bg-info-subtle text-info-emphasis">
+  <body class="bg-dark bg-gradient text-success">
     <nav
       class="navbar bg-dark border-botton border-body navbar-expand-sm bg-body-tertiary sticky-top"
       data-bs-theme="dark"
@@ -29,7 +29,7 @@
           href="#"
           tabindex="-1"
           aria-disabled="true"
-          >Tyler Meyers</a
+          ><h1>Tyler Meyers</h1></a
         >
         <button
           class="navbar-toggler"
@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#aboutme"
+              <a class="nav-link" aria-current="page" href="#aboutMe"
                 >About Me</a
               >
             </li>
@@ -118,30 +118,82 @@
         </div>
       </div>
     </nav>
-    <section class="container">
+    <section class="container text-center">
       <div class="row">
-        <div class="col-12 col-md-2 col-lg-1">
-          <aside id="aboutme">About Me</aside>
+        <div class="col col-lg-2">
         </div>
-        <div class="col-12 col-md-10 col-lg-11">
-          <p class="aboutme">
-            The last 5 years I had been working in public finance at Denver
-            Public Schools (DPS). As a Team Lead on the ERP transistion project
-            from Infor Lawson to Oracle Cloud, I helped completely restructor
-            and update DPS' procure to pay process and retrained our staff. This
-            process helped me discover my passion and desire to learn how to
-            code and change my career path.
-          </p>
-          <p class="aboutme">
-            In pursuit of that dream I am currently enrolled in the DU Boot Camp
-            learning front and back end web developement. 3 months from now I'd
-            like to be employed as a full stack developer. Below is my portfolio
-            of work I have created throughtout this jouney.
-          </p>
+        <div class="col-md-auto">
+          <h2 id="aboutMe">About Me</h2>
+        </div>
+        <div class="col">
         </div>
       </div>
     </section>
-    <div id="carouselMyWork" class="carousel carousel-dark slide">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button d-block text-center bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Education
+          </button>
+        </h3>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p><strong>Chatfield Senior High </strong> - Littleton, CO </p>
+            <p><strong>Univeristy of Colorado Boulder Engineering College </strong> - Applied Mathmatics with emphasis in Economics</strong> </p>
+            <p><strong>University of Denver </strong> - Full Stack Application Development Coding Bootcamp</strong> </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button  d-block text-center bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Work History
+          </button>
+        </h3>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button d-block text-center bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Bio
+          </button>
+        </h3>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p>
+              The last 5 years I had been working in public finance at Denver
+              Public Schools (DPS). As a Team Lead on the ERP transistion project
+              from Infor Lawson to Oracle Cloud, I helped completely restructor
+              and update DPS' procure to pay process and retrained our staff. This
+              process helped me discover my passion and desire to learn how to
+              code and change my career path.
+            </p>
+            <p>
+              In pursuit of that dream I am currently enrolled in the DU Boot Camp
+              learning front and back end web developement. 3 months from now I'd
+              like to be employed as a full stack developer. Below is my portfolio
+              of work I have created throughtout this jouney.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container text-center">
+      <div class="row">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-md-auto">
+          <h2>My Work</h2>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </section>
+    <div id="carouselMyWork" class="carousel carousel slide">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -212,83 +264,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- <div id="carouselMyWork" class="carousel-dark slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselMyWork"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselMyWork"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselMyWork"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./assets/images/IMG_1037.jpeg"
-            class="d-block w-50 vh-30"
-            alt="Axel on big rock"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./assets/images/IMG_0623.jpeg"
-            class="d-block w-50 vh-30"
-            alt="Mediterranean Sea Sunrise"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./assets/images/IMG_0831.jpeg"
-            class="d-block w-50 vh-30"
-            alt="Anya and Darla in Moab"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselMyWork"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselMyWork"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
